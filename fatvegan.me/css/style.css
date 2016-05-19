@@ -1,0 +1,195 @@
+@font-face {
+    font-family: 'bebas';
+    src: url("../fonts/BebasNeue Bold.otf");
+}
+html{
+    /*background: url('../pics/black-woman.jpg');*/
+    filter: grayscale(100%);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    font-family: 'bebas';
+    background-color: #00383b;
+}
+
+.back{
+    background: url('../pics/black-woman.jpg');
+    filter: grayscale(100%);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    font-family: 'bebas';
+    background-color: #00383b;
+}
+
+.no-back{
+    background-image: none;
+    background-color: rgba(0,56,59,.4);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+img{
+    width: 100%;
+    position: absolute;
+    top:0;
+    left:0;
+    right:0;
+}
+
+.landing-page{
+    width: 50%;
+    height: 100vh;
+    position:fixed;
+    top:0px;
+    background-color: rgba(255,255,255,.8);
+    margin-left: 50%;
+    text-align: center;
+    box-shadow: 0px 0px 100px black;
+
+
+}
+
+.landing-page h1{
+    font-family: 'bebas';
+    text-align:center;
+    color: 	#003db3;
+    margin-top: 30%;
+    font-size: 3em;
+}
+
+.landing-page span{
+    font-size: 1em;
+    font-family: 'bebas';
+    text-align:center;
+    color: 	#003db3;
+}
+
+.landing-page a{
+    text-decoration:none;
+    margin-top: 40%;
+    padding-left: .5em;
+    padding-right: .5em;
+    padding-top: .25em;
+    padding-bottom: .25em;
+    /*background-color: rgba(255,255,255,.8);*/
+    background:none;
+    border: 0px;
+    border: 2px solid #003db3;
+    font-family: 'bebas';
+    font-size: 1.5em;
+    color: 	#003db3;  
+}
+
+.landing-page a:hover{
+    /*background-color: white;*/
+    background: #003db3;
+    color: rgba(255,255,255,.9);
+}
+
+.landing-page .credit{
+    position: absolute;
+    bottom: 4px;
+    margin:auto;
+    width: 100%;
+    text-align: center;
+}
+.blogs{
+    display:inline-block;
+    width:100%;
+    text-align:center;
+}
+.blog{
+    width: 15em;
+    height: 15em;
+    position:relative;
+    box-shadow: 0 0 30px black;
+    border-radius: 2px;
+    display:inline-block;
+    text-align: center;
+    margin:1em;
+    box-sizing:padding-box;
+    
+}
+.blog-pic{
+    position: absolute;
+    z-index:-1;
+    box-shadow: 0 0 30px black;
+    border-radius: 2px;
+    box-sizing:padding-box;
+}
+.blog:hover .topic{
+    
+}
+
+.blog:hover{
+    background-color: rgba(255,255,255,.5);
+}
+
+
+.blog .topic{
+    text-align: center;
+    position:relative;
+
+    display:none;
+    z-index: 10000;
+    box-sizing:padding-box;
+}
+
+.blog .date-share{
+    width: 100%;
+    position:absolute;
+    bottom: 0px;
+    height: 20px;
+    padding-bottom: 3px;
+}
+
+
+.blog .date-share .date{
+    float: right;
+    padding-right: 5px;
+}
+
+.blog .share{
+    width: 100%;
+    position:absolute;
+    bottom:0px;
+    left: 0px;
+    height: 100%;
+    display:inline-block;
+}
+
+.blog .share img{
+    width: 20px;
+    display:block;
+    position: absolute;
+    right: 0px;
+}
+
+.blog .share .icon{
+    display: block;
+    border: 2px solid blue;
+}
+
+
+.nav{
+    position: fixed;
+    width: 100%;
+    height: auto;
+    bottom:0px;
+    right: 0px;
+    left:0px;
+    text-align: center;
+    line-height: 0;
+    background-color: rgba(255,255,255,.9);
+    box-shadow: 0px 0px 100px black;
+}
+
+.nav a{
+    text-decoration:none;
+    color: #00383b;
+}
+.nav a:hover{
+    text-decoration:underline;
+}
